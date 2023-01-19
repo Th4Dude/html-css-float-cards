@@ -3,3 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px;
+    background: rgb(223, 140, 30);
+}
+.box {
+    float: left;
+    height: 100px;width: calc(100% /3 - 50px);
+    border: 1px solid;
+    border-color: aqua;
+    text-align: center;
+    line-height: 100px;
+    margin: 25px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+    }
